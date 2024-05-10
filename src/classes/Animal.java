@@ -1,76 +1,82 @@
 package classes;
 
 public class Animal {
-    private String raca;
-    private String idade;
-    private String cor;
-    private double tamanho;
-    private double peso;
-    private char genero;
+  // atributos da classe
+  private String raca;
+  private String idade;
+  private String cor;
+  private double tamanho;
+  private double peso;
+  private char genero;
+  private String especie;
 
-    public Animal(String raca, 
-    String idade, 
-    String cor, 
-    double tamanho, 
-    double peso, 
-    char genero) {
-        this.raca = raca;
-        this.idade = idade;
-        this.cor = cor;
-        this.tamanho = tamanho;
-        this.peso = peso;
-        this.genero = genero;
-    }
+  // método construtor
+  public Animal(String raca,
+      String idade,
+      String cor,
+      double tamanho,
+      double peso,
+      char genero,
+      String especie) {
+    this.raca = raca;
+    this.idade = idade;
+    this.cor = cor;
+    this.tamanho = tamanho;
+    this.peso = peso;
+    this.genero = genero;
+    this.especie = especie;
+  }
 
-    public String getRaca() {
-        return raca;
-    }
+  public String getRaca() {
+    return raca;
+  }
 
-    public String getIdade() {
-        return idade;
-    }
+  public void setRaca(String raca) {
+    this.raca = raca;
+  }
 
-    public String getCor() {
-        return cor;
-    }
+  public String getIdade() {
+    return idade;
+  }
 
-    public double getTamanho() {
-        return tamanho;
-    }
+  public void setIdade(String idade) {
+    this.idade = idade;
+  }
 
-    public double getPeso() {
-        return peso;
-    }
+  public String getCor() {
+    return cor;
+  }
 
-    public char getGenero() {
-        return genero;
-    }
+  public void setCor(String cor) {
+    this.cor = cor;
+  }
 
-    public void setRaca(String raca) {
-        this.raca = raca;
-    }
+  public double getTamanho() {
+    return tamanho;
+  }
 
-    public void setIdade(String idade) {
-        this.idade = idade;
-    }
+  public void setTamanho(double tamanho) {
+    this.tamanho = tamanho;
+  }
 
-    public void setCor(String cor) {
-        this.cor = cor;
-    }
+  public double getPeso() {
+    return peso;
+  }
 
-    public void setTamanho(double tamanho) {
-        this.tamanho = tamanho;
-    }
+  public void setPeso(double peso) {
+    this.peso = peso;
+  }
 
-    public void setPeso(double peso) {
-        this.peso = peso;
-    }
+  public char getGenero() {
+    return genero;
+  }
 
-    public void setGenero(char genero) {
-        this.genero = genero;
-    }
+  public void setGenero(char genero) {
+    this.genero = genero;
+  }
 
+  public String getEspecie() {
+    return especie;
+  }
 
-    
 }
-
